@@ -1,0 +1,66 @@
+<html lang="el"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>Alumni Portal</title>
+  
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+<body>
+
+    <nav>
+        <h2>Δίκτυο Αποφοίτων</h2>
+        <ul>
+          <li onclick = "showPage('home')">Αρχική</li>
+          <li onclick = "showPage('alumni')">Απόφοιτοι</li>
+          <li onclick = "showPage('events')">Εκδηλώσεις</li>
+        </ul>
+    </nav>
+
+  <!-- Pages -->
+  <section id="home" class="page">
+    <div class="hero">
+      <h1>Δίκτυο Αποφοίτων Σχολείου</h1>
+      <p>Συνδέουμε παλιούς μαθητές και δημιουργούμε νέες ευκαιρίες</p>
+    </div>
+  
+    <div class="grid">
+      <div class="card">
+        <h3>👥 Απόφοιτοι</h3>
+        <p>Βρείτε και συνδεθείτε με παλιούς μαθητές.</p>
+      </div>
+  
+      <div class="card">
+        <h3>📅 Εκδηλώσεις</h3>
+        <p>Μείνετε ενημερωμένοι για συναντήσεις και εκδηλώσεις.</p>
+      </div>
+  
+      <div class="card">
+        <h3>📢 Ανακοινώσεις</h3>
+        <p>Τελευταία νέα και ενημερώσεις.</p>
+      </div>
+    </div>
+  </section>
+  <section id="alumni" class="page hidden">
+    <h2>Κατάλογος Αποφοίτων</h2>
+  
+    <input 
+      type="text" 
+      id="search" 
+      placeholder="Αναζήτηση με όνομα, επάγγελμα ή έτος..." 
+      oninput="searchAlumni()">
+  
+    <div id="alumniList" class="grid"></div>
+  </section>
+  <section id="events" class="page hidden">
+    <h2>Εκδηλώσεις</h2>
+    <ul>
+      <li>🎉 Επανασύνδεση 2026</li>
+      <li>📢 Ημέρα Καριέρας</li>
+    </ul>
+  </section>
+  <!-- Link JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
