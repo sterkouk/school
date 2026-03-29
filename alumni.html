@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Απόφοιτοι</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<nav>
+  <h2>Δίκτυο Αποφοίτων</h2>
+  <ul>
+    <li><a href="index.html">Αρχική</a></li>
+    <li><a href="alumni.html">Απόφοιτοι</a></li>
+    <li><a href="events.html">Εκδηλώσεις</a></li>
+  </ul>
+</nav>
+
+<section class="page">
+  <h2>Κατάλογος Αποφοίτων</h2>
+
+  <div class="search-container">
+    <input 
+        type="text" 
+        id="search" 
+        placeholder="Αναζήτηση..." 
+        oninput="searchAlumni()">
+  </div>
+
+  <div id="alumniList" class="grid"></div>
+</section>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

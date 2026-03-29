@@ -9,15 +9,45 @@
   </head>
 <body>
 
-    <nav>
-        <h2>Δίκτυο Αποφοίτων</h2>
-        <ul>
-          <li onclick = "showPage('home')">Αρχική</li>
-          <li onclick = "showPage('alumni')">Απόφοιτοι</li>
-          <li onclick = "showPage('events')">Εκδηλώσεις</li>
-        </ul>
-    </nav>
+  <nav>
+    <h2>Δίκτυο Αποφοίτων</h2>
+    <ul>
+      <li><a href="index.html">Αρχική</a></li>
+      <li><a href="alumni.html">Απόφοιτοι</a></li>
+      <li><a href="events.html">Εκδηλώσεις</a></li>
+    </ul>
+  </nav>
+  <section class="history">
+  <div class="history-container">
 
+    <div class="history-text">
+      <h2>Ιστορία του Σχολείου</h2>
+      <p>
+        Το Γυμνάσιο Δικαίων είναι το βορειότερο γυμνάσιο της Ελλάδας, ευρισκόμενο στον Έβρο,
+        και εξυπηρετεί τους οικισμούς του πρώην Δήμου Τριγώνου. Ιστορικά, 
+        το σχολείο αποτελεί κέντρο εκπαίδευσης για την αγροτική αυτή περιοχή, 
+        με μαθητές που προέρχονται από χωριά όπως ο Άρζος, 
+        το Ορμένιο και το Σπήλαιο, λειτουργώντας σε στενή σύνδεση με την τοπική κοινωνία. 
+      </p>
+      <p>
+        Στόχος μας είναι η παροχή ποιοτικής εκπαίδευσης και η δημιουργία υπεύθυνων 
+        και δημιουργικών πολιτών για το μέλλον.
+      </p>
+    </div>
+
+    <div class="history-image">
+      <div class="carousel">
+        <img id="carousel-image" src="assets/images/school-1.jpg" alt="Σχολείο">
+        
+        <div class="carousel-buttons">
+          <button onclick="prevImage()">❮</button>
+          <button onclick="nextImage()">❯</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
   <!-- Pages -->
   <section id="home" class="page">
     <div class="hero">
@@ -41,24 +71,6 @@
         <p>Τελευταία νέα και ενημερώσεις.</p>
       </div>
     </div>
-  </section>
-  <section id="alumni" class="page hidden">
-    <h2>Κατάλογος Αποφοίτων</h2>
-  
-    <input 
-      type="text" 
-      id="search" 
-      placeholder="Αναζήτηση με όνομα, επάγγελμα ή έτος..." 
-      oninput="searchAlumni()">
-  
-    <div id="alumniList" class="grid"></div>
-  </section>
-  <section id="events" class="page hidden">
-    <h2>Εκδηλώσεις</h2>
-    <ul>
-      <li>🎉 Επανασύνδεση 2026</li>
-      <li>📢 Ημέρα Καριέρας</li>
-    </ul>
   </section>
   <!-- Link JS -->
   <script src="assets/js/script.js"></script>
