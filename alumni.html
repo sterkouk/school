@@ -2,36 +2,53 @@
 <html lang="el">
 <head>
   <meta charset="UTF-8">
-  <title>Απόφοιτοι</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Απόφοιτοι — Γυμνάσιο Δικαίων</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-<nav>
-  <h2>Δίκτυο Αποφοίτων</h2>
-  <ul>
-    <li><a href="index.html">Αρχική</a></li>
-    <li><a href="alumni.html">Απόφοιτοι</a></li>
-    <li><a href="events.html">Εκδηλώσεις</a></li>
-  </ul>
-</nav>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">🏫</div>
+      <h2>Δίκτυο Αποφοίτων</h2>
+    </a>
+    <ul>
+      <li><a href="index.html">Αρχική</a></li>
+      <li><a href="alumni.html">Απόφοιτοι</a></li>
+      <li><a href="events.html">Εκδηλώσεις</a></li>
+    </ul>
+  </nav>
 
-<section class="page">
-  <h2>Κατάλογος Αποφοίτων</h2>
-
-  <div class="search-container">
-    <input 
-        type="text" 
-        id="search" 
-        placeholder="Αναζήτηση..." 
-        oninput="searchAlumni()">
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Κατάλογος Αποφοίτων</h1>
+    <p>Βρείτε και συνδεθείτε με παλιούς συμμαθητές</p>
   </div>
 
-  <div id="alumniList" class="grid"></div>
-</section>
+  <!-- ALUMNI LIST -->
+  <section>
+    <div class="section-inner">
+      <div class="search-container">
+        <div class="search-wrapper">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="search"
+            placeholder="Αναζήτηση με όνομα, επάγγελμα ή έτος..."
+            oninput="searchAlumni()">
+        </div>
+      </div>
+      <div id="alumniList" class="grid"></div>
+    </div>
+  </section>
 
-<script src="assets/js/script.js"></script>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Δίκτυο Αποφοίτων — Γυμνάσιο Δικαίων, Έβρος</p>
+  </footer>
 
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

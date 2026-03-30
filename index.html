@@ -1,78 +1,183 @@
-<html lang="el"></html>
+<!DOCTYPE html>
+<html lang="el">
 <head>
-    <meta charset="UTF-8">
-    <title>Alumni Portal</title>
-  
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Δίκτυο Αποφοίτων — Γυμνάσιο Δικαίων</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 <body>
 
+  <!-- NAVBAR -->
   <nav>
-    <h2>Δίκτυο Αποφοίτων</h2>
+    <a href="index.html" class="nav-brand">
+      <div class="nav-brand-icon">🏫</div>
+      <h2>Δίκτυο Αποφοίτων</h2>
+    </a>
     <ul>
       <li><a href="index.html">Αρχική</a></li>
       <li><a href="alumni.html">Απόφοιτοι</a></li>
       <li><a href="events.html">Εκδηλώσεις</a></li>
     </ul>
   </nav>
-  <section class="history">
-  <div class="history-container">
 
-    <div class="history-text">
-      <h2>Ιστορία του Σχολείου</h2>
-      <p>
-        Το Γυμνάσιο Δικαίων είναι το βορειότερο γυμνάσιο της Ελλάδας, ευρισκόμενο στον Έβρο,
-        και εξυπηρετεί τους οικισμούς του πρώην Δήμου Τριγώνου. Ιστορικά, 
-        το σχολείο αποτελεί κέντρο εκπαίδευσης για την αγροτική αυτή περιοχή, 
-        με μαθητές που προέρχονται από χωριά όπως ο Άρζος, 
-        το Ορμένιο και το Σπήλαιο, λειτουργώντας σε στενή σύνδεση με την τοπική κοινωνία. 
-      </p>
-      <p>
-        Στόχος μας είναι η παροχή ποιοτικής εκπαίδευσης και η δημιουργία υπεύθυνων 
-        και δημιουργικών πολιτών για το μέλλον.
-      </p>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Γυμνάσιο Δικαίων — Έβρος</span>
+      <h1>Δίκτυο Αποφοίτων Σχολείου</h1>
+      <p>Συνδέουμε παλιούς μαθητές, τιμάμε την ιστορία μας και δημιουργούμε νέες ευκαιρίες για το μέλλον.</p>
+      <div class="hero-actions">
+        <a href="alumni.html" class="btn btn-primary">Κατάλογος Αποφοίτων</a>
+        <a href="events.html" class="btn btn-outline">Εκδηλώσεις</a>
+      </div>
     </div>
+    <div class="hero-scroll">
+      <span>↓</span>
+      scroll
+    </div>
+  </section>
 
-    <div class="history-image">
-      <div class="carousel">
-        <img id="carousel-image" src="assets/images/school-1.jpg" alt="Σχολείο">
-        
-        <div class="carousel-buttons">
-          <button onclick="prevImage()">❮</button>
-          <button onclick="nextImage()">❯</button>
+  <!-- STATS BAR -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-number" data-target="10" data-suffix="+">0+</span>
+        <span class="stat-label">Απόφοιτοι</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="30" data-suffix="+">0+</span>
+        <span class="stat-label">Χρόνια Λειτουργίας</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="5" data-suffix="">0</span>
+        <span class="stat-label">Οικισμοί</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="2" data-suffix="">0</span>
+        <span class="stat-label">Εκδηλώσεις 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HISTORY -->
+  <section class="history">
+    <div class="section-inner">
+      <div class="history-grid">
+        <div class="history-text">
+          <div class="section-header">
+            <span class="section-eyebrow">Σχολείο</span>
+            <h2>Ιστορία του Γυμνασίου</h2>
+          </div>
+          <p>
+            Το Γυμνάσιο Δικαίων είναι το βορειότερο γυμνάσιο της Ελλάδας, ευρισκόμενο στον Έβρο,
+            και εξυπηρετεί τους οικισμούς του πρώην Δήμου Τριγώνου.
+          </p>
+          <p>
+            Ιστορικά, το σχολείο αποτελεί κέντρο εκπαίδευσης για την αγροτική αυτή περιοχή,
+            με μαθητές που προέρχονται από χωριά όπως ο Άρζος, το Ορμένιο και το Σπήλαιο,
+            λειτουργώντας σε στενή σύνδεση με την τοπική κοινωνία.
+          </p>
+          <p>
+            Στόχος μας είναι η παροχή ποιοτικής εκπαίδευσης και η δημιουργία υπεύθυνων
+            και δημιουργικών πολιτών για το μέλλον.
+          </p>
+        </div>
+
+        <div class="history-image">
+          <div class="carousel">
+            <img id="carousel-image" src="assets/images/school-1.jpg" alt="Σχολείο">
+            <div class="carousel-buttons">
+              <button onclick="prevImage()" aria-label="Προηγούμενο">❮</button>
+              <button onclick="nextImage()" aria-label="Επόμενο">❯</button>
+            </div>
+            <div class="carousel-dots"></div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
+  <!-- LOCAL HISTORY -->
+  <section class="local-history">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <span class="section-eyebrow">Τοπική Ιστορία</span>
+        <h2>Η Περιοχή μας</h2>
+        <p>Ο Δήμος Τριγώνου στον Έβρο — μια περιοχή με πλούσια ιστορία και ζωντανές κοινότητες.</p>
+      </div>
+      <div class="local-history-grid">
+        <div class="place-card">
+          <span class="place-icon">🏛️</span>
+          <h3>Δίκαια</h3>
+          <p>Η έδρα του πρώην Δήμου Τριγώνου και το βορειότερο χωριό της Ελλάδας, με ιδιαίτερη γεωγραφική και ιστορική σημασία στη μεθοριακή ζώνη του Έβρου.</p>
+        </div>
+        <div class="place-card">
+          <span class="place-icon">🌾</span>
+          <h3>Άρζος</h3>
+          <p>Παραδοσιακός αγροτικός οικισμός με βαθιές ρίζες στη γεωργία και κτηνοτροφία. Κοιτίδα πολλών αποφοίτων του σχολείου μας.</p>
+        </div>
+        <div class="place-card">
+          <span class="place-icon">🚂</span>
+          <h3>Ορμένιο</h3>
+          <p>Ιστορικός σιδηροδρομικός σταθμός με σύνδεση Ελλάδας-Βουλγαρίας. Σημαντικός κόμβος επικοινωνίας και εμπορίου για ολόκληρη την περιοχή.</p>
+        </div>
+        <div class="place-card">
+          <span class="place-icon">🏔️</span>
+          <h3>Σπήλαιο</h3>
+          <p>Χωριό στις παρυφές του Έβρου ποταμού, γνωστό για τη φυσική του ομορφιά και την παραδοσιακή αρχιτεκτονική που διατηρείται έως σήμερα.</p>
+        </div>
+        <div class="place-card">
+          <span class="place-icon">🦅</span>
+          <h3>Ποταμός Έβρος</h3>
+          <p>Ο Έβρος αποτελεί φυσικό σύνορο μεταξύ Ελλάδας και Τουρκίας. Η κοιλάδα του φιλοξενεί σπάνια πτηνά και μοναδικά οικοσυστήματα.</p>
+        </div>
+        <div class="place-card">
+          <span class="place-icon">🌍</span>
+          <h3>Δήμος Τριγώνου</h3>
+          <p>Η ευρύτερη διοικητική περιοχή που συνδέει κοινότητες και παραδόσεις τριών συνόρων — Ελλάδας, Βουλγαρίας και Τουρκίας.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery">
+    <div class="section-inner">
+      <div class="section-header centered">
+        <span class="section-eyebrow">Φωτογραφίες</span>
+        <h2>Φωτογραφικό Αρχείο</h2>
+        <p>Στιγμές από τη ζωή του σχολείου και της περιοχής μας.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/images/school-1.jpg" alt="Γυμνάσιο Δικαίων">
+          <div class="gallery-overlay"><span>Γυμνάσιο Δικαίων</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/school-2.jpg" alt="Σχολική αυλή">
+          <div class="gallery-overlay"><span>Σχολική αυλή</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/school-1.jpg" alt="Είσοδος σχολείου">
+          <div class="gallery-overlay"><span>Είσοδος σχολείου</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
   </div>
-  </section>
-  <!-- Pages -->
-  <section id="home" class="page">
-    <div class="hero">
-      <h1>Δίκτυο Αποφοίτων Σχολείου</h1>
-      <p>Συνδέουμε παλιούς μαθητές και δημιουργούμε νέες ευκαιρίες</p>
-    </div>
-  
-    <div class="grid">
-      <div class="card">
-        <h3>👥 Απόφοιτοι</h3>
-        <p>Βρείτε και συνδεθείτε με παλιούς μαθητές.</p>
-      </div>
-  
-      <div class="card">
-        <h3>📅 Εκδηλώσεις</h3>
-        <p>Μείνετε ενημερωμένοι για συναντήσεις και εκδηλώσεις.</p>
-      </div>
-  
-      <div class="card">
-        <h3>📢 Ανακοινώσεις</h3>
-        <p>Τελευταία νέα και ενημερώσεις.</p>
-      </div>
-    </div>
-  </section>
-  <!-- Link JS -->
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Δίκτυο Αποφοίτων — Γυμνάσιο Δικαίων, Έβρος</p>
+  </footer>
+
   <script src="assets/js/script.js"></script>
 </body>
 </html>
